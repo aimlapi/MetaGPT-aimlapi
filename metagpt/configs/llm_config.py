@@ -17,6 +17,7 @@ from metagpt.utils.yaml_model import YamlModel
 
 
 class LLMType(Enum):
+    AIMLAPI = "aimlapi"  # aimlapi.com, https://docs.aimlapi.com
     OPENAI = "openai"
     ANTHROPIC = "anthropic"
     CLAUDE = "claude"  # alias name of anthropic
@@ -44,7 +45,6 @@ class LLMType(Enum):
     BEDROCK = "bedrock"
     ARK = "ark"  # https://www.volcengine.com/docs/82379/1263482#python-sdk
     LLAMA_API = "llama_api"
-    AIMLAPI = "aimlapi"  # aimlapi.com, https://docs.aimlapi.com
 
     def __missing__(self, key):
         return self.OPENAI

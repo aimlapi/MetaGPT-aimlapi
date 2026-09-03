@@ -43,6 +43,7 @@ from metagpt.utils.token_counter import (
 
 @register_provider(
     [
+        LLMType.AIMLAPI,
         LLMType.OPENAI,
         LLMType.FIREWORKS,
         LLMType.OPEN_LLM,
@@ -54,7 +55,6 @@ from metagpt.utils.token_counter import (
         LLMType.SILICONFLOW,
         LLMType.OPENROUTER,
         LLMType.LLAMA_API,
-        LLMType.AIMLAPI,
     ]
 )
 class OpenAILLM(BaseLLM):
