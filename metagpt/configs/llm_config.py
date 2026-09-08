@@ -17,6 +17,7 @@ from metagpt.utils.yaml_model import YamlModel
 
 
 class LLMType(Enum):
+    AIMLAPI = "aimlapi"  # aimlapi.com, https://docs.aimlapi.com
     OPENAI = "openai"
     ANTHROPIC = "anthropic"
     CLAUDE = "claude"  # alias name of anthropic
